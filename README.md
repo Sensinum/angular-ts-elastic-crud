@@ -12,8 +12,7 @@ Work still in progress...
 ## Install using Bower
 ```
 bower install angular-ts-elastic-crud
-cp -r ./bower_components/angular-ts-elastic-crud/src/app/components ./your_path_to_lib_directory/angular-ts-elastic-crud/components
-cp ./bower_components/angular-ts-elastic-crud/src/app/angular.ts.elastic-crud.ts ./your_path_to_lib_directory/angular-ts-elastic-crud/angular.ts.elastic-crud.ts
+cp -r ./bower_components/angular-ts-elastic-crud/src/app ./your_path_to_lib_directory/angular-ts-elastic-crud
 ```
 
 ## Usage
