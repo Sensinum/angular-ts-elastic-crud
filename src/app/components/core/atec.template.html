@@ -1,0 +1,24 @@
+<div class="ajax-list">
+    <div ng-if="list.getTitle() && templates.title" ng-include="templates.title"></div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead ng-include="templates.header"></thead>
+            <tbody>
+                <tr ng-if="!list.items.length">
+                    <td colspan="{{ getColumnsCount() }}">
+                        <small>{{ list.isFetchInProgress() ? 'Fetching data.Please wait...' : 'No data to display' }}</small>
+                    </td>
+                </tr>
+                <tr ng-repeat="item in list.items" ng-include="templates.row"></tr>
+            </tbody>
+            <tfoot ng-if="templates.footer" ng-include="templates.footer"></tfoot>
+        </table>
+    </div>
+
+<pre ng-if="debugOn">
+{{ list.items | json }}
+</pre>
+
+
+</div>

@@ -1,0 +1,10 @@
+<div class="ajax-list-title container-fluid">
+    <div class="col-md-7">
+        <h1 class="page-header">{{ list.title }}</h1>
+    </div>
+    <div class="text-right col-md-5">
+        <div class="global-actions action-buttons btn-group" role="group" aria-label="{{ list.title }} - Global actions">
+            <a class="btn {{ action.type ? 'btn-' + action.type : 'btn-default' }}" ng-repeat="action in list.getActions('global')" ng-bind-html="action.label" ng-click="action.onClick($event, item)"></a>
+        </div>
+    </div>
+</div>

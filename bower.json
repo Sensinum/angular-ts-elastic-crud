@@ -1,0 +1,49 @@
+{
+  "name": "angular.ts.elastic-crud",
+  "version": "0.1.0",
+  "main": "./dist/angular.ts.elastic-crud.tpl.js",
+  "dependencies": {
+    "angular-sanitize": "~1.4.2",
+    "jquery": "~2.1.4",
+    "restangular": "~1.5.1",
+    "bootstrap-sass": "~3.3.5",
+    "angular": "~1.4.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.2"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
+        "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    }
+  },
+  "resolutions": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "e2e",
+    "gulp",
+    "dist/scripts",
+    "dist/maps",
+    "dist/css",
+    "dist/fonts",
+    "dist/index.html",
+    "src/app/index.module.ts",
+    "src/app/index.css",
+    "src/app/index.scss",
+    "src/index.html"
+  ]
+}

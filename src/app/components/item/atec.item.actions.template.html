@@ -1,0 +1,3 @@
+<div class="action-buttons">
+    <a class="btn btn-sm {{ action.type ? 'btn-' + action.type : 'btn-default' }}" ng-repeat="action in item.getActions()" ng-bind-html="action.label" ng-click="action.onClick($event, item)"></a>
+</div>

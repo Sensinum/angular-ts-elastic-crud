@@ -1,0 +1,19 @@
+<tr class="ajax-list-summary" ng-if="templates.summary" ng-include="templates.summary"></tr>
+<tr>
+    <td colspan="{{ getColumnsCount() }}">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <button ng-if="list.hasAnyActions('group')" type="button" class="btn btn-default" bs-dropdown="list.getActions('group')" aria-haspopup="true" aria-expanded="false">
+                        Group actions {{ list.hasAnySelectedItems() ? '(' + list.getSelectedItemsCount() + ' items selected)' : '' }}
+                        <span class="caret"></span>
+                    </button>
+                </div>
+                <div class="col-md-4 text-center" ng-include="defaults.templates.pagination">
+
+                </div>
+                <div class="col-md-4 text-right">{{ list.getMeta('display-from') }} - {{ list.getMeta('display-to') }} of {{ list.getMeta('display-total') }} total</div>
+            </div>
+        </div>
+    </td>
+</tr>
